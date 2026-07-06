@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid-Layout</title>
+    <style>
+        .container{
+            display:grid;
+            /* grid-template-columns: 1fr 2fr 3fr ; */
+            /* -> fraction(fr) depends on the screen size */
+            grid-template-columns: repeat(4,100px);
+            grid-gap: 50px;
+            grid-auto-rows: minmax(50px,auto)
+        }
+        .items{
+            background-color:lightcoral;
+            border: 5px solid green;
+            border-radius:10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items">Malaya is shifted to Malaysia</div>
+        <div class="items">satayshree is going to hell </div>
+        <div class="items">Brajesh have only skeleton in his body</div>
+        <div class="items">sanju worrid about Padmabati</div>
+        <div class="items">santosh have no hair</div>
+        <div class="items">Box 6</div>
+    </div>
+    
+</body>
+</html>

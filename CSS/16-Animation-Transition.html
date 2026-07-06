@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition property</title>
+    <style>
+        div{
+            height: 400px;
+            width:400px;
+            background-color: green;
+            border: 2px solid black;
+            margin: 200px;
+            /* transition: all;
+            transition-duration: 5s; */
+            /* transition-timing-function: steps(10); */
+            /* transition-timing-function: ease-in; */
+            /* -> ease in -- first slow then fast */
+            /* transition-timing-function: ease-out; */
+            /* ->ease-out -- first fast then slow */
+            /* transition-timing-function: ease-in-out; */
+            /* -> ease-in-out -- slow->fast->slow */
+            /* transition-timing-function: linear;
+            transition-delay: 4s; */
+            transition: all 5s steps(3) 3s;
+            
+        }
+        div:hover{
+            background-color: aqua;
+            color:red;
+            font-size: 40px;
+            font-family: arial;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div></div>
+</body>
+</html>
