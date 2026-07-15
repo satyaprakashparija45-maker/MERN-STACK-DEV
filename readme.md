@@ -972,3 +972,164 @@ Event in Javascript :-
 Practice task :-
  Q. Create a toggle button that changes the screen to dark mode when clicked & light mode when clicked again.
  
+Asynchronous :-
+
+ - Due to synchronous programming ,sometimes imp instruction get blocked due to some privious instruction ,which causes delay in the UI.
+
+ - asynchronous code execution allows to execute next instruction immedeately and doesnot block the flow.
+
+ - ex.
+console.log("one")
+console.log("two")
+setTimeout(()=>{
+   console.log("three)
+},4000)
+console.log("four")
+console.log("five")
+o/p-> 1,2,4,5,....3
+
+
+ Callback in javascript :-
+  
+   - A callback function which passed as an argument of another function.
+
+ Callback hell :-
+
+   - it's a nested callback stacked below one after another forming a pyramid structure.
+   - this style of programming becomes difficult to understand & manage.
+
+Promise in javascript :-
+
+ - It is a solution of callback hell.
+ - Syntax :-
+
+ let promise = new promise((resolve,reject) =>{
+   // statement 
+
+ })
+
+ - A javascript promise object can be ->
+  
+    1. pending -> the result is undefined
+    2. resolved -> the result is a value (fulfilled)
+    3. reject -> the result is an error
+
+    - promise .then((res) => {
+      // statement
+    })
+    - 
+
+Async & Await is JS :-
+
+  - Async function always return a promise.
+  - Syntax :-
+    
+    async function myFunc(){
+      //statement
+    }
+
+    Note --> Await pause the execution of its surrounding async function until the promise is settled.
+
+API Handling / fetch API :-
+
+ - The fetch  API provides an interface for fetching data.
+ - It uses request & response object.
+ - The Fetch() methods is used to fetch a data.
+ - Syntax :-
+   
+   let Demo = fetch(URL)
+
+
+Status code of Node js :-
+
+ - 200--> Ok
+ - 201--> created
+ - 202--> accepted
+ - 300--> multiple choice
+ - 302--> found
+ - 400--> bad request
+ - 402--> payment required
+ - 404--> Not found
+ - 406--> not accept
+ - 408--> request timeout
+ - 500--> internal server error
+ - 502--> bad gateway
+ - 504--> gateway timeout  
+
+  
+
+React JS :-
+
+ - raect js is a frontend javascript library.
+ - react was developed by facebook by softaware engineer jordan walke.
+ - react is also known as react js or ReactJS.
+ - basically react is a tool for building UI(user interface) components.
+ 
+NPX :-
+  
+  - NPX stands for Node Package Execute
+  - purpose -> It is an npm package runner bundled  automatically with npm.
+  - function -> It allows you to run & execute javascript package directlly from the npm, without neeeding to install them permanentlly.
+  - storage -> It download the package to a temporary cache memory,execute the command & clearit up right after.
+
+NPM :-
+ 
+  - NPM stands for Node Package Manager.
+  - purpose -> It is a default package manager for node js.
+  - function -> it installs, update & deletes javascript packages and dependencies for our project.
+  - storage -> It saves package permanentlly either locally inside our project's "node modules" folder or    globally on our system.
+
+
+React JS History :-
+ 
+ - Latest version of react js is 19.2.7
+ - initial release to the public was in july 2013.
+ - React Js was first used in 2011 for facebook's newsfeed features.
+ - initially react gained lots of hate for the mix of javascript + HTML in later stage or now these days45% of software developer used react js as the core library for software development.
+ - ".jsx" is the extenstion of react js.
+ - jsx stands for' javascript XLM' means javascript + HTML.
+
+ Note -> React Boiler Print code - RAFCE - React arrow funtional component expression 
+                                 - RFCE  - React functional arrow expression
+ 
+ --------------------------------------------------------------------------------
+ - when you are installing react it will have multiple way to install and setup but there are 2 common way that we are using react js is --
+    
+    1. CRA (create-react-app)
+    2. Vite(fastest way to install react js)
+
+ File Structure of a react js folder :-
+   
+   1. readme.md -> 
+      
+      - we will wese readme.md for write some description or outline of our project.
+
+   2. package.json ->
+      
+      - it will keep scripts, versions details & dependency of our project.
+
+   3. package-lock.js ->
+      
+      - it basically store dependency of package.json file.
+    
+   4. .gitignore ->
+
+      - files & folder ignored by git tracking ...
+   
+   5. src(source folder) ->
+
+      - it is main source folder where we can create file & write code in it.
+   
+   6. Public ->  
+       
+      - Public is used to take our website logo that show publically and we can store images and videos in that public folder by creating separate separate folder.
+   
+   7. node_modules -> Auto manages external dependencies that need for execute the project and we can say it is the god father  of the react js project.
+
+   
+
+
+
+
+
+  
